@@ -1,0 +1,19 @@
+- thinking about your primary and secondary colors
+ and making them variables first before you start.
+
+
+SASS stuff
+
+- you can deligate some styling functionality to MIXINs
+e.g. @minin name {} => then using => @include name()
+
+-@for $x from 1 through {} for loops with sass
+
+- use of &: &. etc using nth-child() 
+- transition all 0.5sec is some nice easy free animation between two states.
+- use of translate instead of left and top attributes
+
+
+- use transition i.e. transition: all 0.5s ease-out; and transform:translate__(...) for some nice sliding/ movemenent
+    animations.
+
