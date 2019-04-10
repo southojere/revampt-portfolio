@@ -2,9 +2,12 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "i.js",
+  "main": "index.js",
+  "homepage": "https://southojere.github.io/revampt-portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+
   },
   "author": "Jeremy Southon",
   "license": "MIT",
