@@ -71,35 +71,29 @@
 
 //smart phones
 @include mediaSmall {
-    main {
-      padding: 2rem;
-      #home h1 {
-        margin-top: 10vh;
-      }
-  
-      .lg-heading {
-        margin-top:1rem;
-        font-size: 5rem;
-      }
+    padding: 2rem;
+    #home h1 {
+      margin-top: 10vh;
     }
 
     #work{
         height: auto;
-        .wk-heading {
-            padding-top: 5rem;
-            line-height: 6rem;
-        }
-    }
-
-    #about {
-
-        .wk-heading {
-            line-height:6rem; 
-        }
     }
         
+    #about h1 {
+    line-height: 6rem;
+    }
   
+    html {
+        font-size: 10px;
+    }
+
     .projects {
       grid-template-columns: 1fr;
     }
+
+    .lg-heading {
+        margin-top:1rem;
+        // font-size: 16px !important;
+      }
   }

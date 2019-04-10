@@ -41,12 +41,14 @@ html, body {
 
 
 // Media Query Mixins
+// @mixin mediaExtraSmall {
+//     @media screen and (max-width:500px){
+//         @content;
+//     }
+// }
 
-@mixin mediaSmall {
-    @media screen and (max-width:500px){
-        @content;
-    }
-}
+
+
 
 @mixin mediaMedium {
     @media screen and (max-width:768px){
@@ -62,6 +64,11 @@ html, body {
 
 @mixin mediaExtraLarge {
     @media screen and (min-width:1171px){
+        @content;
+    }
+}
+@mixin mediaSmall {
+    @media screen and (max-width:500px){
         @content;
     }
 }
