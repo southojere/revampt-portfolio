@@ -68,17 +68,19 @@
     }
 }
 
-// smart phones
-@include mediaSmall {
 
-    .projects {
-        grid-template-columns: 1fr;
-    }
-    main#home h1 {
+//smart phones
+@include mediaSmall {
+    main {
+      padding: 2rem;
+      #home h1 {
         margin-top: 10vh;
-    }
-    html{
-        font-size: 12px;
+      }
+  
+      .lg-heading {
+        margin-top:1rem;
+        font-size: 5rem;
+      }
     }
 
     #work{
@@ -95,7 +97,9 @@
             line-height:6rem; 
         }
     }
-
-    
-}
-
+        
+  
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
