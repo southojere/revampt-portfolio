@@ -2,13 +2,18 @@
 $primary-color:#444;
 $secondary-color:#eece1a;
 
-$show-home-image: true;
+$show-home-image: false;
 $home-image: url(/dist/img/home-background.jpg);
 $background-opacity: 1; 
 
 
 html {
+    font-family: sans-serif;
     scroll-behavior: smooth;
+}
+html, body {
+    // max-width: 100%;
+    overflow-x: hidden;
 }
 
 //MININS
@@ -16,7 +21,7 @@ html {
 @mixin background {
     @if $show-home-image {
         &#body-img {
-            background: $home-image;
+            // background: $home-image;
             background-size: cover;
             background-attachment: fixed;
         }

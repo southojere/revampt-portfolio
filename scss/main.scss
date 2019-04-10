@@ -21,6 +21,8 @@ h1,h2,h3 {
     margin: 0;
     font-weight: 400;
     color: white;
+    z-index: 2;
+    position: relative;
     &.lg-heading {
         font-size: 6rem;
         span {
@@ -43,13 +45,37 @@ header {
     position: fixed;
     z-index: 2;
     width:100%;
+    #navbar {
+        // background: red;
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+        font-size: 1.6rem;
+        color: white;
+        margin-right: 1rem;
+        margin-top: 1rem;
+
+        span{
+            margin-right: 1rem;
+            cursor: pointer;
+            z-index: 5;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+        }
+    }
 
 }
 
 main {
     padding: 4rem;
     height: 100vh;
-
+    background: #626262;
     .icons{
         margin-top: 1rem;
 
@@ -69,6 +95,14 @@ main {
             margin-top: 20vh;
         }
     }
+
+    .blocker1 {
+        width: 63%;
+        height: 218px;
+        transform: rotate(16deg);
+        background: #444444;
+    }
+    
 }
 
 // MY WORK SECTION
@@ -80,6 +114,8 @@ main {
         margin: 0;
         font-weight: 400;
         color: white;
+        z-index: 2;
+        position: relative;
         &.wk-heading {
             font-size: 6rem;
             span {
@@ -110,7 +146,7 @@ main {
             margin: 0.5rem;
             height: 3rem;
             border: 3px solid white;
-
+            z-index: 2;
             &:hover {
                 border-color: $secondary-color;
                 transition: all 0.5s ease-out;
@@ -136,7 +172,7 @@ main {
                 transition: all 0.5s ease-out;
             }
         }
-        
+
         #project-overlay {
             position: fixed;
             top: 0;
@@ -147,7 +183,7 @@ main {
             opacity: 0.9;
             z-index: 4;
         }
-        .modal{ 
+        .modal{
             z-index: 5;
             height: auto;
             position: absolute;
@@ -160,7 +196,7 @@ main {
             .project-title{
                 text-align: center;
             }
-            
+
             .tech-sub-heading {
                 margin: 0;
             }
@@ -210,10 +246,14 @@ main {
 //ABOUT section
 
 #about {
+    background: #626262;
     height: 100vh;
     padding: 0 4rem;
     margin-top: 10rem;
-   
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
     // headings
     h1,h2, {
         margin: 0;
@@ -237,6 +277,13 @@ main {
         font-size: 2rem;
     }
 
+    .contact-info {
+        font-size: 2rem;
+        color: white;
+        // display: flex;
+        // flex-flow: column wrap;
+    }
+
     .boxes {
         display: flex;
         flex-wrap: wrap;
@@ -253,7 +300,7 @@ main {
 
             &:hover {
                 border-color: $secondary-color;
-                transition: all 0.5s ease-out; 
+                transition: all 0.5s ease-out;
                 padding: 0.5rem 1.5rem;
             }
         }
@@ -263,6 +310,8 @@ main {
         }
     }
 }
+
+
 
 // global Button styles
 .btn {
@@ -287,5 +336,34 @@ main {
 
 }
 
+.btn-dark-disable {
+    @extend .btn;
+    background: darken($primary-color,50);
+    color: white;
+    cursor:initial;
+    &:hover {
+        background: darken($primary-color,50);
+        color: white;
+        text-decoration: line-through;
+    }
+
+}
+
+
+.btn-light-disable {
+
+    @extend .btn;
+    background: lighten($primary-color,50);
+    color:#333;
+    cursor:initial;
+    &:hover {
+        background: lighten($primary-color,50);
+        text-decoration: line-through;
+    }
+
+}
+
 
 @import 'mobile';
+
+

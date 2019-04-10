@@ -1,5 +1,9 @@
 html {
+  font-family: sans-serif;
   scroll-behavior: smooth; }
+
+html, body {
+  overflow-x: hidden; }
 
 .menuButton {
   position: absolute;
@@ -71,7 +75,8 @@ html {
       border: solid 3px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out;
+    cursor: pointer; }
     .menu .nav-item.showing {
       transform: translate3d(0, 0, 0); }
   .menu .nav-link {

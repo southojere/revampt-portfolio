@@ -19,6 +19,8 @@
 
 // Tablets and small laptops
 @include mediaMedium {
+  
+
     .projects {
         grid-template-columns: repeat(2,1fr);
     }
@@ -68,6 +70,7 @@
 
 // smart phones
 @include mediaSmall {
+
     .projects {
         grid-template-columns: 1fr;
     }
@@ -80,6 +83,17 @@
 
     #work{
         height: auto;
+        .wk-heading {
+            padding-top: 5rem;
+            line-height: 6rem;
+        }
+    }
+
+    #about {
+
+        .wk-heading {
+            line-height:6rem; 
+        }
     }
 
     

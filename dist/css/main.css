@@ -1,8 +1,16 @@
 html {
+  font-family: sans-serif;
   scroll-behavior: smooth; }
 
+html, body {
+  overflow-x: hidden; }
+
 html {
+  font-family: sans-serif;
   scroll-behavior: smooth; }
+
+html, body {
+  overflow-x: hidden; }
 
 .menuButton {
   position: absolute;
@@ -74,7 +82,8 @@ html {
       border: solid 3px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out;
+    cursor: pointer; }
     .menu .nav-item.showing {
       transform: translate3d(0, 0, 0); }
   .menu .nav-link {
@@ -114,24 +123,13 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
-  body#body-img {
-    background: url(/dist/img/home-background.jpg);
-    background-size: cover;
-    background-attachment: fixed; }
-  body:after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: #444444; }
 
 h1, h2, h3 {
   margin: 0;
   font-weight: 400;
-  color: white; }
+  color: white;
+  z-index: 2;
+  position: relative; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem; }
     h1.lg-heading span, h2.lg-heading span, h3.lg-heading span {
@@ -149,10 +147,28 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%; }
+  header #navbar {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    font-size: 1.6rem;
+    color: white;
+    margin-right: 1rem;
+    margin-top: 1rem; }
+    header #navbar span {
+      margin-right: 1rem;
+      cursor: pointer;
+      z-index: 5; }
+      header #navbar span:hover {
+        color: #eece1a; }
+    header #navbar::after {
+      content: "";
+      display: block; }
 
 main {
   padding: 4rem;
-  height: 100vh; }
+  height: 100vh;
+  background: #626262; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -164,6 +180,11 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+  main .blocker1 {
+    width: 63%;
+    height: 218px;
+    transform: rotate(16deg);
+    background: #444444; }
 
 #work {
   padding: 0 4rem;
@@ -171,7 +192,9 @@ main {
   #work h1, #work h2 {
     margin: 0;
     font-weight: 400;
-    color: white; }
+    color: white;
+    z-index: 2;
+    position: relative; }
     #work h1.wk-heading, #work h2.wk-heading {
       font-size: 6rem; }
       #work h1.wk-heading span, #work h2.wk-heading span {
@@ -195,7 +218,8 @@ main {
       color: white;
       margin: 0.5rem;
       height: 3rem;
-      border: 3px solid white; }
+      border: 3px solid white;
+      z-index: 2; }
       #work .filters .filter:hover {
         border-color: #eece1a;
         transition: all 0.5s ease-out; }
@@ -256,9 +280,13 @@ main {
           display: none; }
 
 #about {
+  background: #626262;
   height: 100vh;
   padding: 0 4rem;
-  margin-top: 10rem; }
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap; }
   #about h1, #about h2 {
     margin: 0;
     font-weight: 400;
@@ -274,6 +302,9 @@ main {
   #about .interests {
     color: white;
     font-size: 2rem; }
+  #about .contact-info {
+    font-size: 2rem;
+    color: white; }
   #about .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -293,12 +324,12 @@ main {
     #about .boxes .text-secondary {
       color: #eece1a; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark, .btn-light, .btn-dark-disable, .btn-light-disable {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-dark:hover, .btn-light:hover, .btn-dark-disable:hover, .btn-light-disable:hover {
     background: #eece1a;
     color: #333; }
 
@@ -309,6 +340,23 @@ main {
 .btn-light {
   background: #c4c4c4;
   color: #333; }
+
+.btn-dark-disable {
+  background: black;
+  color: white;
+  cursor: initial; }
+  .btn-dark-disable:hover {
+    background: black;
+    color: white;
+    text-decoration: line-through; }
+
+.btn-light-disable {
+  background: #c4c4c4;
+  color: #333;
+  cursor: initial; }
+  .btn-light-disable:hover {
+    background: #c4c4c4;
+    text-decoration: line-through; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -356,4 +404,9 @@ main {
   html {
     font-size: 12px; }
   #work {
-    height: auto; } }
+    height: auto; }
+    #work .wk-heading {
+      padding-top: 5rem;
+      line-height: 6rem; }
+  #about .wk-heading {
+    line-height: 6rem; } }
