@@ -12,12 +12,15 @@ html {
 html, body {
   overflow-x: hidden; }
 
-.nav-item {
-  transform: translate3d(600px, 0, 0);
-  transition: all 0.5s ease-in-out;
-  cursor: pointer; }
-  .nav-item.showing {
-    transform: translate3d(0, 0, 0); }
+#navbar {
+  z-index: 5; }
+  #navbar .nav-item {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 5; }
+    #navbar .nav-item.showing {
+      transform: translate3d(0, 0, 0); }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -41,17 +44,25 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-weight: 400;
   color: white;
   z-index: 2;
   position: relative; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
     font-size: 6rem; }
-    h1.lg-heading span, h2.lg-heading span, h3.lg-heading span {
+    h1.lg-heading span,
+    h2.lg-heading span,
+    h3.lg-heading span {
       color: #eece1a; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
     font-size: 2rem;
     padding: 0.2rem 1rem;
     background: rdba(#454545, 0.2s); }
@@ -106,17 +117,21 @@ main {
 #work {
   padding: 0 4rem;
   height: 100vh; }
-  #work h1, #work h2 {
+  #work h1,
+  #work h2 {
     margin: 0;
     font-weight: 400;
     color: white;
     z-index: 2;
     position: relative; }
-    #work h1.wk-heading, #work h2.wk-heading {
+    #work h1.wk-heading,
+    #work h2.wk-heading {
       font-size: 6rem; }
-      #work h1.wk-heading span, #work h2.wk-heading span {
+      #work h1.wk-heading span,
+      #work h2.wk-heading span {
         color: #eece1a; }
-    #work h1.desc, #work h2.desc {
+    #work h1.desc,
+    #work h2.desc {
       font-size: 2rem;
       padding: 0.2rem 1rem;
       background: rdba(#454545, 0.2s); }
@@ -135,8 +150,7 @@ main {
       color: white;
       margin: 0.5rem;
       height: 3rem;
-      border: 3px solid white;
-      z-index: 2; }
+      border: 3px solid white; }
       #work .filters .filter:hover {
         border-color: #eece1a;
         transition: all 0.5s ease-out; }
@@ -152,49 +166,25 @@ main {
         opacity: 0.5;
         border-color: #eece1a;
         transition: all 0.5s ease-out; }
-    #work .projects #project-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #333;
-      opacity: 0.9;
-      z-index: 4; }
-    #work .projects .modal {
-      z-index: 5;
-      height: auto;
-      position: absolute;
-      width: 75%;
-      top: 5%;
-      left: 14%;
-      padding: 2rem;
-      background: white; }
-      #work .projects .modal .project-title {
-        text-align: center; }
-      #work .projects .modal .tech-sub-heading {
-        margin: 0; }
-      #work .projects .modal .carousel-btn-container {
-        display: flex;
-        justify-content: center; }
-      #work .projects .modal button {
-        width: 3rem;
-        height: 3rem;
-        border: 3px solid white;
-        background: #444;
-        color: white;
-        cursor: pointer; }
-        #work .projects .modal button:hover {
-          border-color: #eece1a; }
-      #work .projects .modal h1, #work .projects .modal h2 {
-        color: #333; }
-      #work .projects .modal img {
-        padding: 1rem;
-        width: 100%; }
-        #work .projects .modal img.showing {
-          display: block; }
-        #work .projects .modal img.hide {
-          display: none; }
+    #work .projects button {
+      width: 3rem;
+      height: 3rem;
+      border: 3px solid white;
+      background: #444;
+      color: white;
+      cursor: pointer; }
+      #work .projects button:hover {
+        border-color: #eece1a; }
+    #work .projects h1,
+    #work .projects h2 {
+      color: #333; }
+    #work .projects img {
+      padding: 1rem;
+      width: 100%; }
+      #work .projects img.showing {
+        display: block; }
+      #work .projects img.hide {
+        display: none; }
 
 #about {
   background: #626262;
@@ -204,15 +194,19 @@ main {
   display: flex;
   justify-content: center;
   flex-flow: column wrap; }
-  #about h1, #about h2 {
+  #about h1,
+  #about h2 {
     margin: 0;
     font-weight: 400;
     color: white; }
-    #about h1.wk-heading, #about h2.wk-heading {
+    #about h1.wk-heading,
+    #about h2.wk-heading {
       font-size: 6rem; }
-      #about h1.wk-heading span, #about h2.wk-heading span {
+      #about h1.wk-heading span,
+      #about h2.wk-heading span {
         color: #eece1a; }
-    #about h1.desc, #about h2.desc {
+    #about h1.desc,
+    #about h2.desc {
       font-size: 2rem;
       padding: 0.2rem 1rem;
       background: rdba(#454545, 0.2s); }

@@ -9,7 +9,7 @@ const projects = document.querySelectorAll('.item');
 
 setTimeout(()=> {
     navItems.forEach(item => item.classList.add('showing'))
-},1000)
+},0.4)
 
 let menuOpen = false;
 let currentFilter = "all"; // for filtering projects
