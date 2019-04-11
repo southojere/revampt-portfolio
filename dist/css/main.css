@@ -179,7 +179,6 @@ main {
     #work .projects h2 {
       color: #333; }
     #work .projects img {
-      padding: 1rem;
       width: 100%; }
       #work .projects img.showing {
         display: block; }
