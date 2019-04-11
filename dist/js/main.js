@@ -7,7 +7,9 @@ const navItems = document.querySelectorAll('.nav-item');
 const filters = document.querySelectorAll('.filter');
 const projects = document.querySelectorAll('.item');
 
-// menuButton.addEventListener('click', handleMenuClick);
+setTimeout(()=> {
+    navItems.forEach(item => item.classList.add('showing'))
+},1000)
 
 let menuOpen = false;
 let currentFilter = "all"; // for filtering projects
