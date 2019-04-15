@@ -304,6 +304,11 @@ main {
             color: $secondary-color;
         }
     }
+
+    #resume {
+
+        &:hover {color: $secondary-color;}
+    }
 }
 
 
@@ -362,6 +367,8 @@ main {
     }
 
 }
+
+
 
 
 @import 'mobile';

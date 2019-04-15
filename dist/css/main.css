@@ -269,6 +269,8 @@ main {
         padding: 0.5rem 1.5rem; }
     #about .boxes .text-secondary {
       color: #eece1a; }
+  #about #resume:hover {
+    color: #eece1a; }
 
 .btn, .btn-dark, .btn-light, .btn-dark-disable, .btn-light-disable {
   display: block;
