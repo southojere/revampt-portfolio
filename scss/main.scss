@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'modal';
 
 
 * {
@@ -22,7 +23,7 @@ h3 {
     margin: 0;
     font-weight: 400;
     color: white;
-    z-index: 2;
+    // z-index: 0;
     position: relative;
 
     &.lg-heading {
@@ -125,7 +126,7 @@ main {
         margin: 0;
         font-weight: 400;
         color: white;
-        z-index: 2;
+        // z-index: 2;
         position: relative;
 
         &.wk-heading {
@@ -163,6 +164,7 @@ main {
             border: 3px solid white;
 
             &:hover {
+                cursor: pointer;
                 border-color: $secondary-color;
                 transition: all 0.5s ease-out;
             }
@@ -184,10 +186,16 @@ main {
             border: 3px solid white;
 
             &:hover {
+                cursor: pointer;
                 opacity: 0.5;
                 border-color: $secondary-color;
                 transition: all 0.5s ease-out;
             }
+        }
+
+        .thumbnailoff {
+            width: 100%;
+            border: 3px solid white;
         }
 
         button {

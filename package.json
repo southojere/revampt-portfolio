@@ -11,7 +11,9 @@
   "author": "Jeremy Southon",
   "license": "MIT",
   "dependencies": {
+    "css-modal": "^1.5.0",
     "gh-pages": "^2.0.1",
+    "light-modal": "^1.1.0",
     "node-sass": "^4.11.0"
   }
 }

@@ -34,6 +34,39 @@ html, body {
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.light-modal-content {
+  width: 60vw;
+  background: #444;
+  border-radius: 0;
+  padding: 1rem; }
+  .light-modal-content img {
+    border-radius: 0;
+    margin-bottom: 1rem; }
+  .light-modal-content .light-modal-heading {
+    text-decoration: underline; }
+  .light-modal-content .light-modal-header {
+    background: #444; }
+
+.light-modal-close-btn, .light-modal-close-icon {
+  background: #444;
+  border-radius: 0; }
+  .light-modal-close-btn:hover, .light-modal-close-icon:hover {
+    background: #eece1a; }
+
+.prjImg.showing {
+  display: block; }
+
+.prjImg {
+  display: none; }
+
+.light-modal-navigation {
+  cursor: pointer; }
+  .light-modal-navigation:hover {
+    color: #eece1a; }
+
+.light-modal-close-icon {
+  cursor: pointer; }
+
 * {
   box-sizing: border-box; }
 
@@ -50,7 +83,6 @@ h3 {
   margin: 0;
   font-weight: 400;
   color: white;
-  z-index: 2;
   position: relative; }
   h1.lg-heading,
   h2.lg-heading,
@@ -122,7 +154,6 @@ main {
     margin: 0;
     font-weight: 400;
     color: white;
-    z-index: 2;
     position: relative; }
     #work h1.wk-heading,
     #work h2.wk-heading {
@@ -152,6 +183,7 @@ main {
       height: 3rem;
       border: 3px solid white; }
       #work .filters .filter:hover {
+        cursor: pointer;
         border-color: #eece1a;
         transition: all 0.5s ease-out; }
       #work .filters .filter.current {
@@ -163,9 +195,13 @@ main {
       width: 100%;
       border: 3px solid white; }
       #work .projects .thumbnail:hover {
+        cursor: pointer;
         opacity: 0.5;
         border-color: #eece1a;
         transition: all 0.5s ease-out; }
+    #work .projects .thumbnailoff {
+      width: 100%;
+      border: 3px solid white; }
     #work .projects button {
       width: 3rem;
       height: 3rem;
@@ -319,4 +355,8 @@ main {
   .projects {
     grid-template-columns: 1fr; }
   .lg-heading {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  .light-modal-content {
+    width: 85vw; }
+  .light-modal-navigation {
+    color: black; } }

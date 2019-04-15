@@ -1,0 +1,51 @@
+
+// Over riding imported modal css
+.light-modal-content {
+    width: 60vw;
+    background: #444;
+    border-radius: 0;
+    padding: 1rem;
+    img {
+        border-radius: 0;
+        margin-bottom: 1rem;
+    }
+
+    .light-modal-heading {
+        text-decoration: underline;
+    }
+
+    .light-modal-header {
+        background: $primary-color;
+    }
+
+
+}
+.light-modal-close-btn, .light-modal-close-icon {
+    background: #444;
+    border-radius: 0;
+    &:hover {
+        background: $secondary-color;
+    }
+}
+
+
+// determining project image that is showing or hidden.
+.prjImg.showing {
+    display: block;
+}
+
+.prjImg  {
+    display: none;
+}
+
+.light-modal-navigation {
+    cursor: pointer;
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.light-modal-close-icon {
+    cursor: pointer;
+}
+

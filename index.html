@@ -8,8 +8,10 @@
     <title>Jeremy Southon</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="dist/css/main.css">
     <link rel="icon" href="dist/img/projects/Digital.png">
+    <link rel="stylesheet" href="./dist/assets/animate.css">
+    <link rel="stylesheet" href="./dist/assets/light-modal.min.css">
+    <link rel="stylesheet" href="dist/css/main.css">
 
 </head>
 
@@ -22,12 +24,11 @@
             <span class="nav-item">CONTACT</span>
         </nav>
     </header>
-
     <main id="home">
         <h1 class="lg-heading">Jeremy
             <span>Southon</span>
         </h1>
-        <h2 class="sm-heading">Web Developer, Programmer, & Machine learning enthusiast</h2>
+        <h2 class="sm-heading">Software Developer, Machine learning enthusiast, and avid Hackfest participant</h2>
 
         <div class="icons">
             <a href="https://twitter.com/southojere">
@@ -62,92 +63,101 @@
 
         <div class="projects">
             <div id="project-overlay" style="display: none;"></div>
-        
+
             <div class="item" data-filter='javascript angular openlayers all'>
-                <img class="thumbnail" src="dist/img/projects/farmiqsoil3.PNG" alt="project">
-                <a target="_blank"  href="https://farmiqsoil-ddecd.firebaseapp.com/" class="btn-light">
+                <img class="thumbnail" src="dist/img/projects/thumbnails/farmiqsoil3.PNG" onclick="createModal('FarmIQSoil','farmiqsoil3.PNG,farmiqsoil5.PNG,farmiqsoil6.PNG,farmiqsoil7.PNG,farmiqsoil10.PNG,farmiqsoil12.PNG,farmiqsoil18.PNG')" alt="project">
+                <a target="_blank" href="https://farmiqsoil-ddecd.firebaseapp.com/" class="btn-light">
                     <i class="fas fa-eye"></i> Project
                 </a>
-                <a  class="btn-dark-disable">
-                    <i class="fab fa-github"></i> GitHub
+                <a class="btn-dark-disable">
+                    <i class="fab fa-github"></i> Description
                 </a>
             </div>
             <div class="item" data-filter='javascript react gatsby all'>
-                <img class="thumbnail" src="dist/img/projects/designerPortfolio.PNG" alt="project">
+                <img class="thumbnail" src="dist/img/projects/thumbnails/designerPortfolio.PNG" onclick="createModal('PortfolioTemplate','portfolio3.png,portfolio4.PNG,portfolio1.5.PNG,portfolio2.PNG')"
+                    alt="project">
                 <a href="https://dreamy-swanson-f11858.netlify.com/" target="_blank" class="btn-light">
                     <i class="fas fa-eye"></i> Project
                 </a>
                 <a href="https://github.com/southojere/Adelines_website" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i> GitHub
+                    <i class="fab fa-github"></i> Description
                 </a>
             </div>
             <div class="item" data-filter='javascript bootscrap all'>
-                <img class="thumbnail" src="dist/img/projects/mittenmaps1.PNG" alt="project">
+                <img class="thumbnail" src="dist/img/projects/thumbnails/mittenmaps1.PNG" onclick="createModal('MittenMaps','/thumbnails/mittenmaps1.PNG')" alt="project">
                 <a href="https://southojere.github.io/MittensMaps/" target="_blank" class="btn-light">
                     <i class="fas fa-eye"></i> Project
                 </a>
                 <a href="https://github.com/southojere/MittensMaps" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i> GitHub
+                    <i class="fab fa-github"></i> Description
                 </a>
             </div>
-            <div class="item" data-filter='ml&ai python'>
-                <img class="thumbnail" src="dist/img/projects/classifier.png" alt="project" data-name="lms">
+            <div class="item" data-filter='ml&ai python all'>
+                <img class="thumbnailoff" src="dist/img/projects/thumbnails/classifier.png" alt="project" data-name="lms">
                 <a class="btn-light-disable">
                     <i class="fas fa-eye-slash"></i> Project
                 </a>
-                <a target ="_blank" href="https://github.com/southojere/FruitClassifier" class="btn-dark">
-                    <i class="fab fa-github"></i> GitHub
+                <a target="_blank" href="https://github.com/southojere/FruitClassifier" class="btn-dark">
+                    <i class="fab fa-github"></i> Description
                 </a>
             </div>
             <div class="item" data-filter='javascript ionic reactnative all'>
-                <img class="thumbnail" src="dist/img/projects/gitscout_mobile5.PNG" alt="project">
+                <img class="thumbnail" src="dist/img/projects/thumbnails/gitscout_mobile5.PNG"
+                    onclick="createModal('GitScout-Mobile','gitscout_mobile1.PNG,gitscout_mobile2.PNG,gitscout_mobile3.PNG,gitscout_mobile4.PNG,gitscout_mobile5.PNG,gitscout_mobile6.PNG,gitscout_mobile7.PNG')"  alt="project">
                 <a class="btn-light-disable">
                     <i class="fas fa-eye-slash"></i> Project
                 </a>
-                <a target ="_blank" href="https://github.com/southojere/GitScoutv3Mobile" class="btn-dark">
-                    <i class="fab fa-github"></i> GitHub
+                <a target="_blank" href="https://github.com/southojere/GitScoutv3Mobile" class="btn-dark">
+                    <i class="fab fa-github"></i> Description
                 </a>
             </div>
-           
+
             <div class="item" data-filter='C# gamedesign all'>
-                <img class="thumbnail" src="dist/img/projects/colour_knight.PNG" alt="project">
+                <img class="thumbnail" src="dist/img/projects/thumbnails/colour_knight.PNG" onclick="createModal('ColourKnight','colour_knight.PNG,colour_knight2.PNG,colour_knight3.PNG')" alt="project">
                 <a target="_blank" href="https://southojere.itch.io/colour-knight" class="btn-light">
                     <i class="fas fa-eye"></i> Project
                 </a>
-                <a target="_blank"href="https://gitlab.ecs.vuw.ac.nz/southojere/COMP313_Assignment2" class="btn-dark">
-                    <i class="fab fa-github"></i> GitHub
+                <a target="_blank" href="https://gitlab.ecs.vuw.ac.nz/southojere/COMP313_Assignment2" class="btn-dark">
+                    <i class="fab fa-github"></i> Description
                 </a>
             </div>
             <div class="item" data-filter='javascript pug node all'>
-                <img class="thumbnail" src="dist/img/projects/Gitscout_project_logo.png" alt="project">
+                <img class="thumbnail" src="dist/img/projects/thumbnails/Gitscout_project_logo.png"
+                onclick="createModal('GitScout-Desktop','gitscout-gif.gif')"  alt="project">
                 <a class="btn-light-disable">
                     <i class="fas fa-eye-slash"></i> Project
                 </a>
                 <a target="_blank" href="https://github.com/rjperez94/hackfest" class="btn-dark">
-                    <i class="fab fa-github"></i> GitHub
+                    <i class="fab fa-github"></i> Description
                 </a>
             </div>
             <div class="item" data-filter='javascript ux bootstrap all'>
-                <img class="thumbnail" src="dist/img/projects/jaybird_login.PNG" alt="project" data-name="lms">
+                <img class="thumbnail" src="dist/img/projects/thumbnails/jaybird_login.PNG"
+                onclick="createModal('Learning-Management-System','jaybird_login.PNG,jaybird2.PNG,jaybird3.PNG,jaybird4.PNG,jaybird5.PNG')" alt="project" data-name="lms">
                 <a href="" class="btn-light-disable">
                     <i class="fas fa-eye-slash"></i> Project
                 </a>
                 <a href="" class="btn-dark">
-                    <i class="fab fa-github"></i> GitHub
+                    <i class="fab fa-github"></i> Description
                 </a>
             </div>
         </div>
     </section>
+
+    <!-- Modal container for projects -->
+    <div class="light-modal" id="modalContainer" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false" style="display: flex;    background: rgba(0, 0, 0, 0.5);">
+
+    </div>
 
     <section id="about">
         <h1 class="lg-heading">Contact
             <span>Me</span>
         </h1>
         <div class="contact-info">
-                <span>Email: Southon55@gmail.com</span>
-                <br>
-                <span>Located: New Zealand & Sydney </span>
-            </div>
+            <span>Email: Southon55@gmail.com</span>
+            <br>
+            <span>Located: New Zealand & Sydney </span>
+        </div>
     </section>
 
     <script src="dist/js/main.js"></script>
