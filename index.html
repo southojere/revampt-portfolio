@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jeremy Southon</title>
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
         crossorigin="anonymous">
     <link rel="icon" href="dist/img/projects/Digital.png">
@@ -13,6 +14,12 @@
     <link rel="stylesheet" href="./dist/assets/light-modal.min.css">
     <link rel="stylesheet" href="dist/css/main.css">
 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body id="body-img">
@@ -25,25 +32,25 @@
         </nav>
     </header>
     <main id="home">
-        <h1 class="lg-heading">Jeremy
+        <h1 class="lg-heading wow slideInLeft">Jeremy
             <span>Southon</span>
         </h1>
-        <h2 class="sm-heading">Software Developer, Machine learning enthusiast, and avid Hackfest participant</h2>
-        <div class="icons">
+        <h2 class="sm-heading wow slideInLeft">Software Developer, Machine learning enthusiast, and avid Hackfest participant</h2>
+        <div class="icons wow slideInLeft">
             <a href="https://twitter.com/southojere">
-                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-twitter fa-2x wow slideInLeft"></i>
             </a>
             <a href="https://github.com/southojere">
-                <i class="fab fa-github fa-2x"></i>
+                <i class="fab fa-github fa-2x wow slideInLeft" data-wow-delay="0.2s"></i>
             </a>
             <a href="https://www.linkedin.com/in/jeremy-southon-559a93176/">
-                <i class="fab fa-linkedin fa-2x"></i>
+                <i class="fab fa-linkedin fa-2x wow slideInLeft" data-wow-delay="0.3s"></i>
             </a>
 
         </div>
         <!-- <span class="blocker1"></span> -->
     </main>
-    <section id="work">
+    <section id="work" >
         <h1 class="lg-heading">My
             <span>Work</span>
         </h1>
@@ -63,7 +70,7 @@
         <div class="projects">
             <div id="project-overlay" style="display: none;"></div>
 
-            <div class="item" data-filter='javascript angular openlayers all'>
+            <div class="item wow slideInLeft" data-filter='javascript angular openlayers all'>
                 <img class="thumbnail" src="dist/img/projects/thumbnails/farmiqsoil3.PNG" onclick="createModal('FarmIQSoil','farmiqsoil3.PNG,farmiqsoil5.PNG,farmiqsoil6.PNG,farmiqsoil7.PNG,farmiqsoil10.PNG,farmiqsoil12.PNG,farmiqsoil18.PNG')"
                     alt="project">
                 <a target="_blank" href="https://farmiqsoil-ddecd.firebaseapp.com/home" class="btn-light">
@@ -73,7 +80,7 @@
                     <i class="fab fa-github"></i> Description
                 </a>
             </div>
-            <div class="item" data-filter='javascript react gatsby all'>
+            <div class="item wow slideInLeft" data-filter='javascript react gatsby all'>
                 <img class="thumbnail" src="dist/img/projects/thumbnails/designerPortfolio.PNG" onclick="createModal('PortfolioTemplate','portfolio3.PNG,portfolio4.PNG,portfolio1.5.PNG,portfolio2.PNG')"
                     alt="project">
                 <a href="https://dreamy-swanson-f11858.netlify.com/" target="_blank" class="btn-light">
@@ -83,7 +90,7 @@
                     <i class="fab fa-github"></i> Description
                 </a>
             </div>
-            <div class="item" data-filter='javascript bootscrap all'>
+            <div class="item wow slideInLeft" data-filter='javascript bootscrap all'>
                 <img class="thumbnail" src="dist/img/projects/thumbnails/mittenmaps1.PNG" onclick="createModal('MittenMaps','/thumbnails/mittenmaps1.PNG')"
                     alt="project">
                 <a href="https://southojere.github.io/MittensMaps/" target="_blank" class="btn-light">
@@ -93,7 +100,7 @@
                     <i class="fab fa-github"></i> Description
                 </a>
             </div>
-            <div class="item" data-filter='ml&ai python all'>
+            <div class="item wow slideInLeft" data-filter='ml&ai python all'>
                 <img class="thumbnailoff" src="dist/img/projects/thumbnails/classifier.png" alt="project" data-name="lms">
                 <a class="btn-light-disable">
                     <i class="fas fa-eye-slash"></i> Project
@@ -102,7 +109,7 @@
                     <i class="fab fa-github"></i> Description
                 </a>
             </div>
-            <div class="item" data-filter='javascript ionic reactnative all'>
+            <div class="item wow slideInLeft" data-filter='javascript ionic reactnative all'>
                 <img class="thumbnail" src="dist/img/projects/thumbnails/gitscout_mobile5.PNG" onclick="createModal('GitScout-Mobile','gitscout_mobile1.PNG,gitscout_mobile2.PNG,gitscout_mobile3.PNG,gitscout_mobile4.PNG,gitscout_mobile5.PNG,gitscout_mobile6.PNG,gitscout_mobile7.PNG')"
                     alt="project">
                 <a class="btn-light-disable">
@@ -113,7 +120,7 @@
                 </a>
             </div>
 
-            <div class="item" data-filter='C# gamedesign all'>
+            <div class="item wow slideInLeft" data-filter='C# gamedesign all'>
                 <img class="thumbnail" src="dist/img/projects/thumbnails/colour_knight.PNG" onclick="createModal('ColourKnight','colour_knight.PNG,colour_knight2.PNG,colour_knight3.PNG')"
                     alt="project">
                 <a target="_blank" href="https://southojere.itch.io/colour-knight" class="btn-light">
@@ -123,7 +130,7 @@
                     <i class="fab fa-github"></i> Description
                 </a>
             </div>
-            <div class="item" data-filter='javascript pug node all'>
+            <div class="item wow slideInLeft" data-filter='javascript pug node all'>
                 <img class="thumbnail" src="dist/img/projects/thumbnails/Gitscout_project_logo.png" onclick="createModal('GitScout-Desktop','gitscout-gif.gif')"
                     alt="project">
                 <a class="btn-light-disable">
@@ -133,7 +140,7 @@
                     <i class="fab fa-github"></i> Description
                 </a>
             </div>
-            <div class="item" data-filter='javascript ux bootstrap all'>
+            <div class="item wow slideInLeft" data-filter='javascript ux bootstrap all'>
                 <img class="thumbnail" src="dist/img/projects/thumbnails/jaybird_login.PNG" onclick="createModal('Learning-Management-System','jaybird_login.PNG,jaybird2.PNG,jaybird3.PNG,jaybird4.PNG,jaybird5.PNG')"
                     alt="project" data-name="lms">
                 <a href="" class="btn-light-disable">
