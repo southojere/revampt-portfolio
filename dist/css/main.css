@@ -87,7 +87,8 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 6rem;
+    animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
     h1.lg-heading span,
     h2.lg-heading span,
     h3.lg-heading span {
@@ -97,11 +98,22 @@ h3 {
   h3.sm-heading {
     font-size: 2rem;
     padding: 0.2rem 1rem;
-    background: rdba(#454545, 0.2s); }
+    background: rdba(#454545, 0.2s);
+    animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 a {
   color: #fff;
   text-decoration: none; }
+
+body .overlay {
+  transition: all 0.5s ease-in-out;
+  background: #444;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  animation: fade-out 5s ease-out both; }
 
 header {
   position: fixed;
@@ -130,7 +142,8 @@ main {
   height: 100vh;
   background: #626262; }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -305,6 +318,16 @@ main {
   .btn-light-disable:hover {
     background: #c4c4c4;
     text-decoration: line-through; }
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
 
 @media screen and (min-width: 1171px) {
   .projects {
