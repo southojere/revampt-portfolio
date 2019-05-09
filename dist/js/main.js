@@ -8,15 +8,9 @@ const filters = document.querySelectorAll('.filter');
 const projects = document.querySelectorAll('.item');
 
 //removes init overlay after n seconds
-setTimeout( () => {
-    const overlay = document.querySelector('.overlay');
-    overlay.style.display = 'none';
-    console.log('test')
-},5000);
 
-setTimeout(() => {
     navItems.forEach(item => item.classList.add('showing'))
-}, 0.4)
+
 
 let menuOpen = false;
 let currentFilter = "all"; // for filtering projects
