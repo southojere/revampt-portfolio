@@ -201,3 +201,12 @@ function createModal(title, images) {
     modelContainer.style.visibility = 'visible'
 
 }
+
+
+/**
+ * Unimportant code, just used for 'My Portfolio' project
+ */
+
+ const welcome = () => {
+     alert(':)')
+ }
